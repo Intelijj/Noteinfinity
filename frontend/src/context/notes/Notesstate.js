@@ -3,7 +3,7 @@ import notecontext from "./notecontext";
 
 
 const Notesstate=(props)=>{
-  const host ="http://localhost:5000"
+  const host ="https://noteinfinitybackend.vercel.app"
     const initialnotes=[ ]
 
  const [note, setnote] = useState(initialnotes)
