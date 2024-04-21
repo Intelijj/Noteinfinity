@@ -10,7 +10,7 @@ let navigate=useNavigate()
     const putcred = async (e) => {
         e.preventDefault();
         const {name,email,password}=cred;
-        const response = await fetch("http://localhost:5000/api/check/createuser", {
+        const response = await fetch("https://noteinfinitybackend.vercel.app/api/check/createuser", {
           method: "POST",
     
           headers: {

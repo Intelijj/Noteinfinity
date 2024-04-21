@@ -8,7 +8,7 @@ let navigate=useNavigate()
 
   const putcred = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/check/login", {
+    const response = await fetch("https://noteinfinitybackend.vercel.app/api/check/login", {
       method: "POST",
 
       headers: {
