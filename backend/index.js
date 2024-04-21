@@ -10,6 +10,9 @@ app.use(cors({
   origin:['https://noteinfinity.vercel.app', 'http://localhost:3000'],
   methods:['GET', 'POST', 'DELETE', 'PUT']
 }))
+app.get('/', (req, res) => {
+  res.send('hi')
+})
 app.use(express.json())
 
 app.use('/api/check',require('./routes/check'))
