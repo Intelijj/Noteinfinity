@@ -6,7 +6,9 @@ const port = 5000
 
 
 
-app.use(cors())
+app.use(cors({
+  origin:['https://noteinfinity.vercel.app/', 'http://localhost:3000']
+}))
 app.use(express.json())
 
 app.use('/api/check',require('./routes/check'))
