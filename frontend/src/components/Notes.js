@@ -17,7 +17,7 @@ let navigate=useNavigate()
       navigate("/login")
       
     }
-  });
+  },[]);
   const ref = useRef(null)
   const refclose = useRef(null)
  
