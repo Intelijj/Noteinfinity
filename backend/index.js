@@ -6,10 +6,7 @@ const port = 5000
 
 
 
-app.use(cors({
-  origin:['https://noteinfinity.vercel.app', 'http://localhost:3000'],
-  methods:['GET', 'POST', 'DELETE', 'PUT']
-}))
+app.use(cors())
 app.get('/', (req, res) => {
   res.send('hi')
 })
